@@ -15,6 +15,8 @@ syntax enable
 colorscheme monokai
 let g:molokai_original = 1
 let g:rehash256 = 1
+
+" session manage defaults
 let g:session_autoload = 'no'
 let g:session_autosave = 'yes'
 let g:ag_working_path_mode="r"
@@ -30,7 +32,6 @@ autocmd BufWinLeave * call clearmatches()
 " highlight the status bar when in insert mode
 if version >= 700
   au InsertEnter * hi StatusLine ctermfg=235 ctermbg=2
-  "au InsertEnter * hi StatusLine ctermfg=241 ctermbg=231
   au InsertLeave * hi StatusLine ctermfg=231 ctermbg=241
 endif
 
@@ -91,10 +92,8 @@ nnoremap <leader>g <C-]>
 nnoremap <c-z> <nop>
 nnoremap <leader>f :Ag!<space>
 inoremap <C-e> <Esc>
-inoremap jk <Esc>l
-inoremap JK <Esc>l
-inoremap kj <Esc>l
-inoremap KJ <Esc>l
+"inoremap jk <Esc>l
+"inoremap kj <Esc>l
 inoremap <leader>, <Esc>:w<CR>
 nnoremap <leader>, <Esc>:w<CR>
 inoremap <C-G> <Esc>:w<CR>
