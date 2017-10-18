@@ -1,5 +1,5 @@
-
-export TERM="xterm-256color"
+alias tmux="TERM=screen-256color-bce tmux"
+#export TERM="xterm-256color"
 
 # if you do a 'rm *', Zsh will give you a sanity check!
 setopt RM_STAR_WAIT
