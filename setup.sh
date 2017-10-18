@@ -2,10 +2,12 @@
 unlink ~/.vimrc
 unlink ~/.vim
 unlink ~/.tmux.conf
+unlink ~/.zshrc
 
 ln -s ~/dotfiles/vimrc ~/.vimrc
 ln -s ~/dotfiles/vim ~/.vim
 ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
+ln -s ~/dotfiles/zshrc ~/.zshrc
 
 ### Install Vundle at first
 rm -rf ~/dotfiles/bundle
