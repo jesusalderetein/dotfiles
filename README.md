@@ -48,3 +48,9 @@ $ tmux attach -t session_name
 
 ### Switch between sessions
 ctrl+j s
+
+
+# ZSH
+## Add to .profile
+export SHELL=/bin/zsh
+[ -z "$ZSH_VERSION" ] && exec /bin/zsh -l
