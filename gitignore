@@ -1,2 +1,24 @@
 .ruby-version
 .ruby-gemset
+
+
+# Node
+npm-debug.log
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# WebStorm
+.idea/
+
+# vi
+*~
+*.sw*
+
+# General
+log/
+*.log
+
