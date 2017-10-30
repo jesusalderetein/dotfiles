@@ -1,3 +1,4 @@
+# RVM
 .ruby-version
 .ruby-gemset
 
@@ -17,6 +18,7 @@ Thumbs.db
 # vi
 *~
 *.sw*
+tags
 
 # General
 log/
