@@ -24,3 +24,5 @@ tags
 log/
 *.log
 
+# Custom
+start.sh
