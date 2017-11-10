@@ -1,5 +1,6 @@
-alias tmux="TERM=screen-256color-bce tmux"
-#export TERM="xterm-256color"
+# Use alias for tmux for support colors
+#alias tmux="TERM=screen-256color-bce tmux"
+alias tmux='tmux -2'
 
 # if you do a 'rm *', Zsh will give you a sanity check!
 setopt RM_STAR_WAIT
@@ -56,7 +57,7 @@ DISABLE_AUTO_TITLE="true"
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="dd/mm/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
