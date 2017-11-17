@@ -5,6 +5,7 @@ unlink ~/.tmux.conf
 unlink ~/.zshrc
 unlink ~/.gitconfig
 unlink ~/.gitignore
+unlink ~/.gvimrc
 
 ln -s ~/dotfiles/vimrc ~/.vimrc
 ln -s ~/dotfiles/vim ~/.vim
@@ -12,6 +13,7 @@ ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
 ln -s ~/dotfiles/zshrc ~/.zshrc
 ln -s ~/dotfiles/gitconfig ~/.gitconfig
 ln -s ~/dotfiles/gitignore ~/.gitignore
+ln -s ~/dotfiles/gvimrc ~/.gvimrc
 
 ### Install Vundle at first
 rm -rf ~/dotfiles/bundle

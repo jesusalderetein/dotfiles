@@ -120,3 +120,4 @@ map <S-Y> "+yy
 map <leader>s :,$s/
 "map <silent> <C-t> :NERDTreeToggle<CR>
 map Q <Nop>
+
