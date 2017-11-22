@@ -20,6 +20,7 @@ let g:rehash256 = 1
 let g:session_autoload = 'no'
 let g:session_autosave = 'yes'
 let g:ag_working_path_mode="r"
+let g:showmarks_enable=0
 
 " highlight trailing spaces in annoying red
 highlight ExtraWhitespace ctermbg=1 guibg=red
@@ -46,7 +47,7 @@ highlight CursorLine   ctermbg=236
 
 set clipboard=unnamed             " use the system clipboard
 set ruler                         " show row and column in footer
-"set relativenumber                " show relative line numbers
+set relativenumber                " show relative line numbers
 set hlsearch                      " highlight all search matches
 set cursorline                    " highlight current line
 set ignorecase                    " ignore case in search
