@@ -19,6 +19,7 @@ Plugin 'xolox/vim-misc'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'kien/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'kshenoy/vim-signature'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 " filetype plugin indent on    " required
