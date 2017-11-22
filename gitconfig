@@ -1,7 +1,15 @@
-# This is Git's per-user configuration file.
-[user]
-# Please adapt and uncomment the following lines:
-  name = Jesus Kenji Alderete
-  email = jesusk8er@gmail.com
 [core]
-	excludesfile = /Users/jesuskenji/.gitignore
+	excludesfile = ~/.gitignore
+[user]
+	email = jesusk8er@gmail.com
+	name = Jesus Alderete
+[alias]
+	tree = log --oneline --decorate --all --graph
+	dt = difftool
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[help]
+	autocorrect = 30
+
