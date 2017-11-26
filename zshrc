@@ -2,6 +2,11 @@
 #alias tmux="TERM=screen-256color-bce tmux"
 alias tmux='tmux -2'
 
+# Make this only on  macosx.
+if [[ `uname` == 'Darwin' ]]
+then
+  alias vim="/usr/local/bin/vim" # Use vim installed by brew install
+fi
 # if you do a 'rm *', Zsh will give you a sanity check!
 setopt RM_STAR_WAIT
 
@@ -21,8 +26,8 @@ export ZSH=~/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-#ZSH_THEME="robbyrussell"
-ZSH_THEME="avit"
+ZSH_THEME="robbyrussell"
+#ZSH_THEME="avit"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
