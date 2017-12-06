@@ -11,10 +11,14 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
 syntax on
-syntax enable
-colorscheme monokai
-let g:molokai_original = 1
-let g:rehash256 = 1
+let g:solarized_termcolors=256
+set background=dark
+colorscheme solarized
+
+"syntax enable
+"colorscheme monokai
+"let g:molokai_original = 1
+"let g:rehash256 = 1
 
 " session manage defaults
 let g:session_autoload = 'no'
@@ -31,18 +35,18 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
 " highlight the status bar when in insert mode
-if version >= 700
-  au InsertEnter * hi StatusLine ctermfg=235 ctermbg=2
-  au InsertLeave * hi StatusLine ctermfg=231 ctermbg=241
-endif
+"if version >= 700
+  "au InsertEnter * hi StatusLine ctermfg=235 ctermbg=2
+  "au InsertLeave * hi StatusLine ctermfg=231 ctermbg=241
+"endif
 
 " set up some custom colors
-highlight clear SignColumn
-highlight VertSplit    ctermbg=236
-highlight ColorColumn  ctermbg=237
-highlight LineNr       ctermbg=236 ctermfg=240
-highlight CursorLineNr ctermbg=236 ctermfg=244
-highlight CursorLine   ctermbg=236
+"highlight clear SignColumn
+"highlight VertSplit    ctermbg=236
+"highlight ColorColumn  ctermbg=237
+"highlight LineNr       ctermbg=236 ctermfg=240
+"highlight CursorLineNr ctermbg=236 ctermfg=244
+"highlight CursorLine   ctermbg=236
 
 
 set clipboard=unnamed             " use the system clipboard
@@ -84,41 +88,26 @@ let mapleader = ","
 
 "
 " MAPS: custom keys
-"nnoremap <leader>so :OpenSession
-"nnoremap <leader>ss :SaveSession
-"nnoremap <leader>sd :DeleteSession<CR>
-"nnoremap <leader>sc :CloseSession<CR>
 noremap <leader>d dd
 nnoremap <leader>g <C-]>
 nnoremap <c-z> <nop>
 nnoremap <leader>f :Ag!<space>
-inoremap <C-e> <Esc>
-"inoremap jk <Esc>l
-"inoremap kj <Esc>l
-inoremap <leader>, <Esc>:w<CR>
-nnoremap <leader>, <Esc>:w<CR>
-inoremap <C-G> <Esc>:w<CR>
-nnoremap <C-G> <Esc>:w<CR>
 nnoremap <leader>q <Esc>:q<CR>
-nnoremap <C-Q> <Esc>:q<CR>
-"nnoremap <C-J> <C-W><C-J>
-"nnoremap <C-K> <C-W><C-K>
-"nnoremap <C-L> <C-W><C-L>
-"nnoremap <C-H> <C-W><C-H>
+inoremap <C-e> <Esc>
 nnoremap th  :tabfirst<CR>
 nnoremap tk  :tabnext<CR>
 nnoremap tj  :tabprev<CR>
 nnoremap tl  :tablast<CR>
 nnoremap tn  :tabnew<CR>
-" nnoremap <silent> <C-t> :tabnew<CR>
 nnoremap <silent> <C-m> :res<CR>:vertical res<CR>
 nnoremap <silent> <C-n> <C-w>=
-nnoremap <silent> gen :TagsGenerate!
 nnoremap gl $
 nnoremap gh ^
-map <S-k> <Nop>
-map <S-Y> "+yy
 map <leader>s :,$s/
-"map <silent> <C-t> :NERDTreeToggle<CR>
+
+" Disables
+map <S-k> <Nop>
 map Q <Nop>
 
+" Copy to clipboard
+map <S-Y> "+yy
