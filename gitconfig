@@ -1,15 +1,17 @@
 [core]
-	excludesfile = ~/.gitignore
+  excludesfile = ~/.gitignore
 [user]
-	email = jesusk8er@gmail.com
-	name = Jesus Alderete
+  email = jesusk8er@gmail.com
+  name = Jesus Alderete
 [alias]
-	tree = log --oneline --decorate --all --graph
-	dt = difftool
+  tree = log --oneline --decorate --all --graph
+  dt = difftool
 [diff]
-	tool = vimdiff
+  tool = vimdiff
 [difftool]
-	prompt = false
+  prompt = false
 [help]
-	autocorrect = 30
-
+  autocorrect = 30
+[merge]
+  summary = true
+  verbosity = 1
