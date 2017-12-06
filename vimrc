@@ -10,15 +10,31 @@ autocmd BufEnter * silent! lcd %:p:h
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
-syntax on
-let g:solarized_termcolors=256
-set background=dark
-colorscheme solarized
+" Solarized Theme
+"syntax on
+"let g:solarized_termcolors=256
+"set background=dark
+"colorscheme solarized
 
-"syntax enable
-"colorscheme monokai
-"let g:molokai_original = 1
-"let g:rehash256 = 1
+" Monokai Theme
+syntax enable
+colorscheme monokai
+let g:molokai_original = 1
+let g:rehash256 = 1
+
+" highlight the status bar when in insert mode
+if version >= 700
+  au InsertEnter * hi StatusLine ctermfg=235 ctermbg=2
+  au InsertLeave * hi StatusLine ctermfg=231 ctermbg=241
+endif
+
+" set up some custom colors
+highlight clear SignColumn
+highlight VertSplit    ctermbg=236
+highlight ColorColumn  ctermbg=237
+highlight LineNr       ctermbg=236 ctermfg=240
+highlight CursorLineNr ctermbg=236 ctermfg=244
+highlight CursorLine   ctermbg=236
 
 " session manage defaults
 let g:session_autoload = 'no'
@@ -33,21 +49,6 @@ autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
-
-" highlight the status bar when in insert mode
-"if version >= 700
-  "au InsertEnter * hi StatusLine ctermfg=235 ctermbg=2
-  "au InsertLeave * hi StatusLine ctermfg=231 ctermbg=241
-"endif
-
-" set up some custom colors
-"highlight clear SignColumn
-"highlight VertSplit    ctermbg=236
-"highlight ColorColumn  ctermbg=237
-"highlight LineNr       ctermbg=236 ctermfg=240
-"highlight CursorLineNr ctermbg=236 ctermfg=244
-"highlight CursorLine   ctermbg=236
-
 
 set clipboard=unnamed             " use the system clipboard
 set ruler                         " show row and column in footer
