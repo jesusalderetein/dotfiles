@@ -52,7 +52,7 @@ autocmd BufWinLeave * call clearmatches()
 
 set clipboard=unnamed             " use the system clipboard
 set ruler                         " show row and column in footer
-set relativenumber                " show relative line numbers
+" set relativenumber                " show relative line numbers
 set hlsearch                      " highlight all search matches
 set cursorline                    " highlight current line
 set ignorecase                    " ignore case in search
