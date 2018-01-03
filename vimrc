@@ -91,22 +91,15 @@ let mapleader = ","
 " MAPS: custom keys
 noremap <leader>d dd
 nnoremap <leader>g <C-]>
-nnoremap <c-z> <nop>
 nnoremap <leader>f :Ag!<space>
 nnoremap <leader>q <Esc>:q<CR>
-inoremap <C-e> <Esc>
-nnoremap th  :tabfirst<CR>
-nnoremap tk  :tabnext<CR>
-nnoremap tj  :tabprev<CR>
-nnoremap tl  :tablast<CR>
-nnoremap tn  :tabnew<CR>
 nnoremap <silent> <C-m> :res<CR>:vertical res<CR>
 nnoremap <silent> <C-n> <C-w>=
-nnoremap gl $
-nnoremap gh ^
-map <leader>s :,$s/
+map <leader>r :,$s/
+map <silent> <leader>s :w!<CR>
 
 " Disables
+nnoremap <c-z> <nop>
 map <S-k> <Nop>
 map Q <Nop>
 
