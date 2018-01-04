@@ -39,6 +39,9 @@ let g:ctrlp_cmd = 'CtrlP'
 
 " vim sessions
 let g:session_autoload = 'no'
+let g:session_autosave = 'yes'
+let g:ag_working_path_mode="r"
+let g:showmarks_enable=0
 
 " hint to keep lines short
 if exists('+colorcolumn')
