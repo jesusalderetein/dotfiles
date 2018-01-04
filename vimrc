@@ -49,6 +49,10 @@ if exists('+colorcolumn')
   highlight ColorColumn ctermbg=gray
 endif
 
+" Leader
+" set leader key to comma
+let mapleader = ","
+
 " custom keys
 nnoremap <leader>f :Ag!<space>
 nnoremap <leader>q <Esc>:q<CR>
