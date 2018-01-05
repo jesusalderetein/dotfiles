@@ -7,9 +7,11 @@ Vim for text and code editor. Using [vim-plug](https://github.com/junegunn/vim-p
 #### Symbolic links
 After clone the dotfiles repository in your profile folder create the symbolic links
 
-`ln -s ~/dotfiles/vimrc ~/.vimrc`
-`ln -s ~/dotfiles/vim ~/.vim`
-`ln -s ~/dotfiles/tmux.conf ~/.tmux.conf`
+```sh
+ln -s ~/dotfiles/vimrc ~/.vimrc
+ln -s ~/dotfiles/vim ~/.vim
+ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
+```
 
 
 ### CTAGS
@@ -19,21 +21,20 @@ After clone the dotfiles repository in your profile folder create the symbolic l
 - Ubuntu: `apt-get install exuberant-ctags`
 - MacOSX: `brew install ctags`
 
-#### To generate ctags
+#### Generate ctags
 - Into project run this command:
 `ctags -R .`
 
 ## Install Silver search
-Ubuntu: `apt-get install silversearcher-ag`
-MacOSX:  `brew install the_silver_searcher`
+- Ubuntu: `apt-get install silversearcher-ag`
+- MacOSX:  `brew install the_silver_searcher`
 
 ## Install ranger (requires python)
-Ubuntu: `apt-get install ranger`
-MacOSX:  `brew install ranger`
+- Ubuntu: `apt-get install ranger`
+- MacOSX:  `brew install ranger`
 
-# Issues
-## To resolv "Sorry, no help for help.txt"
+## Issues
+### To resolv "Sorry, no help for help.txt"
 ```vim
 :helptags $VIMRUNTIME/doc
 ```
-
