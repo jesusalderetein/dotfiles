@@ -1,17 +1,19 @@
 call plug#begin()
 
 Plug 'airblade/vim-gitgutter'
+" Plug 'edkolev/tmuxline.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'kshenoy/vim-signature'
 Plug 'rking/ag.vim'
 Plug 'rafaqz/ranger.vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-sensible'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'xolox/vim-session'
 Plug 'xolox/vim-misc'
 
 call plug#end()
-
 
 syntax on
 filetype plugin indent on
@@ -26,9 +28,8 @@ function! NumberToggle()
   endif
 endfunc
 
-nnoremap <C-l> :call NumberToggle()<cr>
+nnoremap <silent> <C-l> :call NumberToggle()<cr>
 
-set clipboard=unnamed             " use the system clipboard
 set backspace=2                   " make backspace work like most other apps
 set backspace=indent,eol,start
 set list listchars=tab:>-,trail:.,precedes:<,extends:>
@@ -86,4 +87,5 @@ map <S-Y> "+yy
 :command Tex RangerTab
 :command Ex RangerEdit
 
-
+" Airline configuration
+let g:airline_theme='term'
