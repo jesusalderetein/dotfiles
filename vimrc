@@ -15,8 +15,8 @@ call plug#begin()
 call plug#end()
 
 set background=dark
+let g:solarized_termcolors=16
 colorscheme solarized
-let g:solarized_termcolors=256
 
 syntax on
 filetype plugin indent on
