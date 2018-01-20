@@ -1,19 +1,22 @@
 call plug#begin()
-
-Plug 'airblade/vim-gitgutter'
-" Plug 'edkolev/tmuxline.vim'
-Plug 'kien/ctrlp.vim'
-Plug 'kshenoy/vim-signature'
-Plug 'rking/ag.vim'
-Plug 'rafaqz/ranger.vim'
-Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-sensible'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'xolox/vim-session'
-Plug 'xolox/vim-misc'
-
+  Plug 'altercation/vim-colors-solarized'
+  Plug 'airblade/vim-gitgutter'
+  Plug 'kien/ctrlp.vim'
+  Plug 'kshenoy/vim-signature'
+  Plug 'rking/ag.vim'
+  Plug 'rafaqz/ranger.vim'
+  Plug 'tpope/vim-commentary'
+  Plug 'tpope/vim-sensible'
+  Plug 'tpope/vim-fugitive'
+  Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
+  Plug 'xolox/vim-session'
+  Plug 'xolox/vim-misc'
 call plug#end()
+
+set background=dark
+colorscheme solarized
+let g:solarized_termcolors=256
 
 syntax on
 filetype plugin indent on
