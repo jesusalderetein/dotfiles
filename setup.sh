@@ -11,6 +11,7 @@ ln -sf ~/dotfiles/gvimrc ~/.gvimrc
 ### Install git submodules
 git submodule update --init --recursive
 
-### Open vim and execute the Vundle
+### Open vim and execute the PlugInstall
+echo "Please ignore the warnings and hit ENTER"
 vim +PlugInstall +qa
 
