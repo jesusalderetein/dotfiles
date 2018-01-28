@@ -1,5 +1,5 @@
 call plug#begin()
-  Plug 'altercation/vim-colors-solarized'
+  " Plug 'altercation/vim-colors-solarized' " Configured as gitsubmodule
   Plug 'airblade/vim-gitgutter'
   Plug 'kien/ctrlp.vim'
   Plug 'kshenoy/vim-signature'

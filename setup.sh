@@ -8,8 +8,9 @@ ln -sf ~/dotfiles/gitconfig ~/.gitconfig
 ln -sf ~/dotfiles/gitignore ~/.gitignore
 ln -sf ~/dotfiles/gvimrc ~/.gvimrc
 
-### Open vim and execute the Vundle
-vim -c "PlugInstall"
-
 ### Install git submodules
 git submodule update --init --recursive
+
+### Open vim and execute the Vundle
+vim +PlugInstall +qa
+
