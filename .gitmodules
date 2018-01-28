@@ -7,3 +7,6 @@
 [submodule "tmux/plugins/tmux-sensible"]
 	path = tmux/plugins/tmux-sensible
 	url = https://github.com/tmux-plugins/tmux-sensible
+[submodule "vim/plugged/vim-colors-solarized"]
+	path = vim/plugged/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized
