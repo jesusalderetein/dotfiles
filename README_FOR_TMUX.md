@@ -1,3 +1,9 @@
+# TMUX plugins
+
+#### Install dependencies
+- Ubuntu: `sudo apt-get install xsel` #or xclip
+- MacOSX: `brew install reattach-to-user-namespace`
+
 # TMUX cheat sheet
 
 ## Sessions
