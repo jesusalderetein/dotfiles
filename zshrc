@@ -110,3 +110,7 @@ source $ZSH/oh-my-zsh.sh
 # Add rbenv to PATH
 eval "$(rbenv init -)"
 eval "$(pyenv init -)"
+
+# History configuration
+setopt noincappendhistory
+setopt nosharehistory
