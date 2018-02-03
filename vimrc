@@ -19,9 +19,7 @@ let g:solarized_termcolors=16
 colorscheme solarized
 
 " code folding
-set foldmethod=indent
-au BufWinLeave * mkview
-au BufWinEnter * silent loadview
+set foldmethod=manual
 
 syntax on
 filetype plugin indent on
