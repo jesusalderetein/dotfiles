@@ -8,6 +8,8 @@ call plug#begin()
   Plug 'tpope/vim-commentary'
   Plug 'tpope/vim-sensible'
   Plug 'tpope/vim-fugitive'
+  Plug 'tpope/vim-surround'
+  Plug 'tpope/vim-repeat'
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
   Plug 'xolox/vim-session'
