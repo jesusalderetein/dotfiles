@@ -1,5 +1,6 @@
 [core]
   excludesfile = ~/.gitignore
+  editor = vim
 [user]
   email = jesusk8er@gmail.com
   name = Jesus Alderete
