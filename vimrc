@@ -103,3 +103,6 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 
 set nofixendofline
+
+set undofile " Maintain undo history between sessions
+set undodir=~/.vim/undodir " Undo dir

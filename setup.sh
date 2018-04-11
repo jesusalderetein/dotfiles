@@ -9,6 +9,8 @@ ln -sf ~/dotfiles/gitignore ~/.gitignore
 ln -sf ~/dotfiles/gvimrc ~/.gvimrc
 ln -sf ~/dotfiles/gemrc ~/.gemrc
 
+mkdir ~/.vim/undodir
+
 ### Install git submodules
 git submodule update --init --recursive
 
