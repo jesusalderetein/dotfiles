@@ -69,7 +69,7 @@ let g:showmarks_enable=0
 " hint to keep lines short
 if exists('+colorcolumn')
   set colorcolumn=100
-  highlight ColorColumn ctermbg=gray
+  highlight ColorColumn ctermbg=0 guibg=lightgrey
 endif
 
 " Leader
