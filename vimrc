@@ -16,9 +16,9 @@ call plug#begin()
   Plug 'xolox/vim-misc'
 call plug#end()
 
-set background=dark
-let g:solarized_termcolors=16
-colorscheme solarized
+" set background=dark
+" let g:solarized_termcolors=16
+" colorscheme solarized
 
 " code folding
 set foldmethod=manual
