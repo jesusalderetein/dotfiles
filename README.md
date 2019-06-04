@@ -38,3 +38,6 @@ ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
 ```vim
 :helptags $VIMRUNTIME/doc
 ```
+
+
+Un saludo a mis amigos de Bancard
