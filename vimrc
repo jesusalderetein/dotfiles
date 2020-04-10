@@ -1,5 +1,4 @@
 call plug#begin()
-  Plug 'altercation/vim-colors-solarized'
   Plug 'airblade/vim-gitgutter'
   Plug 'kien/ctrlp.vim'
   Plug 'kshenoy/vim-signature'
@@ -10,15 +9,14 @@ call plug#begin()
   Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-repeat'
+  Plug 'tomasiser/vim-code-dark'
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
   Plug 'xolox/vim-session'
   Plug 'xolox/vim-misc'
 call plug#end()
 
-" set background=dark
-" let g:solarized_termcolors=16
-" colorscheme solarized
+colorscheme codedark
 
 " code folding
 set foldmethod=manual
@@ -59,6 +57,7 @@ autocmd BufWinLeave * call clearmatches()
 "set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_show_hidden = 1
 
 " vim sessions
 let g:session_autoload = 'no'
@@ -104,5 +103,3 @@ let g:airline#extensions#tabline#formatter = 'unique_tail'
 
 set nofixendofline
 
-set undofile " Maintain undo history between sessions
-set undodir=~/.vim/undodir " Undo dir
