@@ -1,43 +1,19 @@
-# DOTFILES (Work in progress)
-Dotfiles to work with tmux, zsh and vim.
+# .dotfiles
+These are dotfiles customized and optimized to work with [tmux](https://github.com/tmux/tmux/wiki), [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki) and [vim](https://github.com/vim/vim/blob/master/README.md) in a lightweight way.
 
-### VIM
-Vim for text and code editor. Using [vim-plug](https://github.com/junegunn/vim-plug) as plugin manager.
+If you are someone who uses a lot of terminal in your day by day. Consider using this configuration or part of them if you prefer.
 
-#### Symbolic links
-After clone the dotfiles repository in your profile folder create the symbolic links
+## Installation
 
-```sh
-ln -s ~/dotfiles/vimrc ~/.vimrc
-ln -s ~/dotfiles/vim ~/.vim
-ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
-```
-
-
-### CTAGS
-[https://github.com/szw/vim-tags](https://github.com/szw/vim-tags)
-
-#### Install dependencies
-- Ubuntu: `apt-get install exuberant-ctags`
-- MacOSX: `brew install ctags`
-
-#### Generate ctags
-- Into project run this command:
-`ctags -R .`
-
-## Install Silver search
-- Ubuntu: `apt-get install silversearcher-ag`
+### Install Silver search
+- Debian: `apt install silversearcher-ag`
 - MacOSX:  `brew install the_silver_searcher`
 
-## Install ranger (requires python)
-- Ubuntu: `apt-get install ranger`
+### Install ranger
+- Debian: `apt install ranger`
 - MacOSX:  `brew install ranger`
 
-## Issues
-### To resolv "Sorry, no help for help.txt"
-```vim
-:helptags $VIMRUNTIME/doc
+## Run the setup with SH
+```sh
+sh setup.sh
 ```
-
-
-Un saludo a mis amigos de Bancard
