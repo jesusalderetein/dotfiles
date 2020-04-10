@@ -27,3 +27,6 @@ log/
 # Custom
 start.sh
 vim.sh
+routes.txt
+GoogleService-Info.plist
+reset-cache.sh
